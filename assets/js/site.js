@@ -1,5 +1,5 @@
 /* Misael Granillo — site behavior
-   Language toggle (persisted), mobile menu, one split-flap reveal. */
+   Language toggle (persisted), mobile menu, scroll reveal. */
 (function () {
   "use strict";
 
@@ -42,42 +42,31 @@
     });
   }
 
-  /* ---- Split-flap board ---- */
+  /* ---- Scroll reveal ---- */
   var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var board = document.querySelector(".board");
-  if (board) {
-    // Build flap glyphs from plain text (progressive enhancement).
-    board.querySelectorAll(".val").forEach(function (val) {
-      var text = val.textContent.trim();
-      val.textContent = "";
-      text.split("").forEach(function (c) {
-        var s = document.createElement("span");
-        if (c === " ") { s.className = "sep"; s.innerHTML = "&nbsp;"; }
-        else { s.className = "ch"; s.textContent = c; s.setAttribute("data-c", c); }
-        val.appendChild(s);
-      });
-    });
+  var SEL = ".hero .kicker, .hero h1, .hero .sub, .cred, .section-label, .section h2, .lede, .domain, .ledger, .foundation, .arc-item, .tr-group, .panel, .cap, .note-list li, .contact-row, .article h1, .prose > div > *";
+  var targets = Array.prototype.slice.call(document.querySelectorAll(SEL));
 
-    if (!reduce && "IntersectionObserver" in window) {
-      var CHARS = "ABCDEFGHJKLMNPRSTUVWXYZ0123456789$+.KM%";
-      var io = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-          if (!entry.isIntersecting) return;
-          io.unobserve(entry.target);
-          entry.target.querySelectorAll(".val .ch").forEach(function (ch, i) {
-            var final = ch.getAttribute("data-c");
-            var ticks = 5 + (i % 5), n = 0;
-            setTimeout(function () {
-              var iv = setInterval(function () {
-                n++;
-                if (n >= ticks) { clearInterval(iv); ch.textContent = final; }
-                else { ch.textContent = CHARS[Math.floor(Math.random() * CHARS.length)]; }
-              }, 45);
-            }, 30 * i);
-          });
-        });
-      }, { threshold: 0.35 });
-      io.observe(board);
-    }
+  if (reduce || !("IntersectionObserver" in window)) {
+    targets.forEach(function (el) { el.classList.add("in"); });
+    return;
   }
+
+  targets.forEach(function (el, i) {
+    el.classList.add("reveal");
+    // small stagger within the same group
+    var d = (i % 6) * 55;
+    el.style.transitionDelay = d + "ms";
+  });
+
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("in");
+        io.unobserve(entry.target);
+      }
+    });
+  }, { rootMargin: "0px 0px -8% 0px", threshold: 0.12 });
+
+  targets.forEach(function (el) { io.observe(el); });
 })();
