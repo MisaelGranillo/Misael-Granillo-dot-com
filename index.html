@@ -22,12 +22,12 @@
 <meta name="twitter:title" content="Misael Granillo - Operador que construye sistemas">
 <meta name="twitter:description" content="Once años dirigiendo ventas de bienes raíces de lujo; hoy construyendo software, infraestructura propia y reentrenándose en medicina.">
 
-<meta name="theme-color" content="#313e66">
+<meta name="theme-color" content="#f3f1ea">
 <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,380..560;1,9..144,380..520&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/styles.css">
 
 <script type="application/ld+json">
@@ -53,7 +53,7 @@
 }
 </script>
 </head>
-<body>
+<body class="home">
 
 <header class="topbar">
   <div class="wrap">
@@ -82,8 +82,8 @@
   <section class="hero">
     <div class="wrap">
       <p class="kicker">
-        <span class="es">Misael Granillo</span>
-        <span class="en">Misael Granillo</span>
+        <span class="es">Operador · constructor de sistemas</span>
+        <span class="en">Operator · systems builder</span>
       </p>
       <h1>
         <span class="es">Un operador que construye sus propios <em>sistemas</em>.</span>
@@ -158,19 +158,19 @@
   <!-- DEPARTURE BOARD / METRICS -->
   <section class="section">
     <div class="wrap">
-      <div class="board" role="group" aria-label="Resultados verificados / Verified results">
-        <div class="board-head">
-          <span class="bh-l"><span class="dot"></span><span class="es">Resultados verificados</span><span class="en">Verified results</span></span>
-          <span class="bh-r"><span class="es">Fuente: CV</span><span class="en">Source: CV</span></span>
+      <div class="ledger" role="group" aria-label="Resultados verificados / Verified results">
+        <div class="ledger-head">
+          <span class="lh-l"><span class="dot"></span><span class="es">Resultados verificados</span><span class="en">Verified results</span></span>
+          <span class="lh-r"><span class="es">Fuente: CV</span><span class="en">Source: CV</span></span>
         </div>
-        <div class="board-rows">
-          <div class="flaprow"><span class="lbl"><span class="es">Años en bienes raíces de lujo</span><span class="en">Years in luxury real estate</span></span><span class="val">11+</span></div>
-          <div class="flaprow"><span class="lbl"><span class="es">Ventas mensuales escaladas</span><span class="en">Monthly sales scaled</span></span><span class="val">$600K $3M</span></div>
-          <div class="flaprow"><span class="lbl"><span class="es">Equipo dirigido, multi-oficina</span><span class="en">Team led, multi-office</span></span><span class="val">40</span></div>
-          <div class="flaprow"><span class="lbl"><span class="es">Unidades comercializadas</span><span class="en">Units sold</span></span><span class="val">600+</span></div>
-          <div class="flaprow"><span class="lbl"><span class="es">Inventario acumulado</span><span class="en">Inventory handled</span></span><span class="val">$80M+</span></div>
-          <div class="flaprow"><span class="lbl"><span class="es">Generado en 15 meses (MXN)</span><span class="en">Generated in 15 months (MXN)</span></span><span class="val">$300M+</span></div>
-          <div class="flaprow"><span class="lbl"><span class="es">Ciclo de venta (días)</span><span class="en">Sales cycle (days)</span></span><span class="val">45 15</span></div>
+        <div class="ledger-rows">
+          <div class="ledger-row"><span class="lbl"><span class="es">Años en bienes raíces de lujo</span><span class="en">Years in luxury real estate</span></span><span class="val">11+</span></div>
+          <div class="ledger-row"><span class="lbl"><span class="es">Ventas mensuales escaladas</span><span class="en">Monthly sales scaled</span></span><span class="val">$600K <i>→</i> $3M</span></div>
+          <div class="ledger-row"><span class="lbl"><span class="es">Equipo dirigido, multi-oficina</span><span class="en">Team led, multi-office</span></span><span class="val">40</span></div>
+          <div class="ledger-row"><span class="lbl"><span class="es">Unidades comercializadas</span><span class="en">Units sold</span></span><span class="val">600+</span></div>
+          <div class="ledger-row"><span class="lbl"><span class="es">Inventario acumulado</span><span class="en">Inventory handled</span></span><span class="val">$80M+</span></div>
+          <div class="ledger-row"><span class="lbl"><span class="es">Generado en 15 meses (MXN)</span><span class="en">Generated in 15 months (MXN)</span></span><span class="val">$300M+</span></div>
+          <div class="ledger-row"><span class="lbl"><span class="es">Ciclo de venta (días)</span><span class="en">Sales cycle (days)</span></span><span class="val">45 <i>→</i> 15</span></div>
         </div>
       </div>
     </div>
@@ -338,10 +338,10 @@
             <span class="en">Services he designs, builds, and runs himself.</span>
           </p>
           <ul class="infra-list">
-            <li><span class="host">clima</span><span class="desc"><span class="es">Plataforma de clima y ciclones.</span><span class="en">Weather and cyclone platform.</span><span class="pending" title="Confirmar despliegue público">por confirmar</span></span></li>
-            <li><span class="host">lounge</span><span class="desc"><span class="es">Generador de pases de abordar.</span><span class="en">Boarding pass generator.</span><span class="pending" title="Confirmar despliegue público">por confirmar</span></span></li>
-            <li><span class="host">split-flap</span><span class="desc"><span class="es">Displays de salidas multi-aeropuerto.</span><span class="en">Multi-airport departure displays.</span><span class="pending" title="Confirmar despliegue público">por confirmar</span></span></li>
-            <li><span class="host">gems</span><span class="desc"><span class="es">Servicio en infraestructura propia.</span><span class="en">A service on his own infrastructure.</span><span class="pending" title="Confirmar despliegue público">por confirmar</span></span></li>
+            <li><span class="host">clima</span><span class="desc"><span class="es">Plataforma de clima y ciclones.</span><span class="en">Weather and cyclone platform.</span><span class="pending" title="Confirmar despliegue público / to confirm"><span class="es">por confirmar</span><span class="en">to confirm</span></span></span></li>
+            <li><span class="host">lounge</span><span class="desc"><span class="es">Generador de pases de abordar.</span><span class="en">Boarding pass generator.</span><span class="pending" title="Confirmar despliegue público / to confirm"><span class="es">por confirmar</span><span class="en">to confirm</span></span></span></li>
+            <li><span class="host">split-flap</span><span class="desc"><span class="es">Displays de salidas multi-aeropuerto.</span><span class="en">Multi-airport departure displays.</span><span class="pending" title="Confirmar despliegue público / to confirm"><span class="es">por confirmar</span><span class="en">to confirm</span></span></span></li>
+            <li><span class="host">gems</span><span class="desc"><span class="es">Servicio en infraestructura propia.</span><span class="en">A service on his own infrastructure.</span><span class="pending" title="Confirmar despliegue público / to confirm"><span class="es">por confirmar</span><span class="en">to confirm</span></span></span></li>
           </ul>
         </div>
 

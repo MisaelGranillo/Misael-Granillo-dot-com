@@ -1,8 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="MG">
-  <rect width="64" height="64" rx="13" fill="#1e2540"/>
-  <rect x="12" y="30.4" width="40" height="3.2" fill="#0a0e1e"/>
-  <text x="32" y="30" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="30" font-weight="600" fill="#f0c667" letter-spacing="-1">MG</text>
-  <rect x="12" y="38" width="17" height="4" rx="1" fill="#313e66"/>
-  <rect x="31" y="38" width="9" height="4" rx="1" fill="#313e66"/>
-  <rect x="42" y="38" width="10" height="4" rx="1" fill="#c98a1f"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="7" fill="#15150f"/>
+  <path d="M8 22.5 V10 L16 17.5 L24 10 V22.5" fill="none" stroke="#f3f1ea" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="8" y="25" width="16" height="2.2" rx="1.1" fill="#2436e6"/>
 </svg>
