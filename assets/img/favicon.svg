@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="MG">
+  <rect width="64" height="64" rx="13" fill="#1e2540"/>
+  <rect x="12" y="30.4" width="40" height="3.2" fill="#0a0e1e"/>
+  <text x="32" y="30" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="30" font-weight="600" fill="#f0c667" letter-spacing="-1">MG</text>
+  <rect x="12" y="38" width="17" height="4" rx="1" fill="#313e66"/>
+  <rect x="31" y="38" width="9" height="4" rx="1" fill="#313e66"/>
+  <rect x="42" y="38" width="10" height="4" rx="1" fill="#c98a1f"/>
+</svg>
