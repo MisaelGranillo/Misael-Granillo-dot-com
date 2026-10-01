@@ -148,7 +148,7 @@ a { color: inherit; }
 .hero::after {
   content: ""; position: absolute; z-index: 0; bottom: -30%; left: -10%;
   width: min(520px, 70vw); aspect-ratio: 1; border-radius: 50%;
-  background: radial-gradient(circle, rgba(224,33,154,.26), transparent 70%); filter: blur(80px); pointer-events: none;
+  background: radial-gradient(circle, rgba(56,189,248,.30), transparent 70%); filter: blur(80px); pointer-events: none;
   animation: float2 22s var(--ease) infinite alternate;
 }
 @keyframes float1 { to { transform: translate(-50px, 40px) scale(1.12); } }
