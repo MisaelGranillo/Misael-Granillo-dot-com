@@ -1,0 +1,6 @@
+# Cloudflare / wrangler local cache (contains account info)
+.wrangler/
+# macOS
+.DS_Store
+# Node
+node_modules/
