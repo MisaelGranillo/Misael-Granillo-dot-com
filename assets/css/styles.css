@@ -19,14 +19,14 @@
   --line:       rgba(20,19,15,.14);
   --line-2:     rgba(20,19,15,.28);
 
-  /* signal colors */
-  --cobalt:     #2436e6;
-  --violet:     #6d28d9;
-  --magenta:    #e0219a;
+  /* signal colors — blue family */
+  --cobalt:     #1e3aff;
+  --violet:     #2f74ff;   /* mid blue */
+  --magenta:    #38bdf8;   /* bright sky/azure */
   --accent:     var(--cobalt);
-  --accent-ink: #1b29b0;
-  --grad:       linear-gradient(110deg, #2436e6 0%, #6d28d9 48%, #e0219a 100%);
-  --grad-soft:  linear-gradient(110deg, rgba(36,54,230,.14), rgba(109,40,217,.12) 50%, rgba(224,33,154,.12));
+  --accent-ink: #1a34c8;
+  --grad:       linear-gradient(110deg, #1e3aff 0%, #2f74ff 48%, #38bdf8 100%);
+  --grad-soft:  linear-gradient(110deg, rgba(30,58,255,.14), rgba(47,116,255,.12) 50%, rgba(56,189,248,.12));
 
   /* dark act */
   --night:      #0b0b10;
@@ -36,7 +36,7 @@
   --night-line: rgba(255,255,255,.12);
 
   --shadow:     0 12px 40px -16px rgba(20,19,15,.26);
-  --shadow-lg:  0 36px 90px -30px rgba(36,54,230,.34);
+  --shadow-lg:  0 36px 90px -30px rgba(30,58,255,.34);
 
   --maxw:   1200px;
   --gutter: clamp(18px, 5vw, 64px);
@@ -260,7 +260,7 @@ a { color: inherit; }
 .panel p { font-size: .98rem; margin: 0; color: var(--night-mut); }
 .panel .tag { font-family: var(--mono); font-size: .68rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; display: inline-block; margin-bottom: 1rem; padding: .26rem .6rem; border-radius: 999px; background: rgba(255,255,255,.07); color: var(--night-ink); border: 1px solid var(--night-line); }
 /* layout spans */
-.panel--medicine { grid-column: span 6; display: grid; grid-template-columns: 1.3fr 1fr; gap: clamp(1rem,3vw,2.4rem); align-items: center; background: linear-gradient(120deg, #141225, #1b1030 60%, #24122b); border-color: rgba(255,255,255,.16); }
+.panel--medicine { grid-column: span 6; display: grid; grid-template-columns: 1.3fr 1fr; gap: clamp(1rem,3vw,2.4rem); align-items: center; background: linear-gradient(120deg, #0e1430, #0f1c40 58%, #10294d); border-color: rgba(255,255,255,.16); }
 .panel--medicine::before { content: ""; position: absolute; top: -30%; right: -5%; width: 46%; aspect-ratio: 1; background: var(--grad); filter: blur(90px); opacity: .5; pointer-events: none; }
 .panel--medicine .m-body, .panel--medicine .m-aside { position: relative; z-index: 1; }
 .panel--medicine h3 { font-size: clamp(1.8rem, 3.6vw, 2.8rem); letter-spacing: -.03em; line-height: 1.02; }
