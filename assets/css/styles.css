@@ -267,25 +267,27 @@ em { font-style: italic; }
    Act I — foundation + arc timeline
    ============================================================ */
 .foundation {
-  border: 1px solid var(--line-2); background: var(--paper);
-  padding: clamp(1.4rem, 3vw, 2.2rem); margin-top: clamp(2rem, 4vw, 3rem);
+  border: 0; background: transparent; padding: 0;
+  margin-top: clamp(2rem, 4vw, 3rem); padding-top: clamp(1.6rem, 3vw, 2.2rem);
+  border-top: 1px solid var(--line); max-width: 760px;
 }
-.foundation h3 { margin-bottom: .9rem; }
-.foundation p { color: var(--ink-2); font-size: 1rem; }
+.foundation h3 { margin-bottom: 1.1rem; font-size: clamp(1.1rem, 1.9vw, 1.35rem); font-weight: 500; }
+.foundation p { color: var(--muted); font-size: .97rem; line-height: 1.72; }
+.foundation p:first-of-type { color: var(--ink-2); font-size: 1.1rem; line-height: 1.62; }
 .foundation p:last-child { margin-bottom: 0; }
 
-.arc { margin-top: clamp(2.2rem, 4vw, 3rem); border-top: 1px solid var(--line-2); }
+.arc { margin-top: clamp(2.2rem, 4vw, 3rem); border-top: 1px solid var(--line); }
 .arc-item {
-  display: grid; grid-template-columns: 150px 1fr; column-gap: clamp(1rem, 3vw, 2.4rem); row-gap: .4rem;
-  padding: 1.5rem 0; border-bottom: 1px solid var(--line);
+  display: grid; grid-template-columns: 150px 1fr; column-gap: clamp(1rem, 3vw, 2.4rem); row-gap: .35rem;
+  padding: 1.8rem 0; border-bottom: 1px solid var(--line);
 }
 .arc-when {
   grid-column: 1; grid-row: 1 / span 2;
-  font-family: var(--mono); font-variant-numeric: tabular-nums; font-size: .8rem;
-  font-weight: 500; letter-spacing: .04em; color: var(--muted); padding-top: .3rem;
+  font-family: var(--mono); font-variant-numeric: tabular-nums; font-size: .78rem;
+  font-weight: 400; letter-spacing: .04em; color: var(--faint); padding-top: .35rem;
 }
-.arc-role { grid-column: 2; grid-row: 1; font-family: var(--disp); font-weight: 500; font-size: 1.3rem; margin: 0; letter-spacing: -.01em; }
-.arc-item p { grid-column: 2; grid-row: 2; color: var(--muted); font-size: .97rem; margin: 0; max-width: 64ch; }
+.arc-role { grid-column: 2; grid-row: 1; font-family: var(--disp); font-weight: 400; font-size: 1.2rem; margin: 0; letter-spacing: -.01em; color: var(--ink-2); }
+.arc-item p { grid-column: 2; grid-row: 2; color: var(--muted); font-size: .96rem; margin: 0; max-width: 64ch; }
 .arc-item.accent .arc-role { color: var(--accent); }
 .arc-item.accent .arc-when { color: var(--accent-ink); }
 @media (max-width: 680px) {
